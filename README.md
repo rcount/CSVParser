@@ -13,7 +13,7 @@ let tsv = CSV(text" "id\tname\tage\n1\tAlice\t18", delimiter = .tab)
 
 //From a file with errors
 do{
-let csv = CSV(path: "pathToFile")
+  let csv = CSV(path: "pathToFile")
 }catch{
   //Handle errors
 }
