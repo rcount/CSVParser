@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+
+let path = "/Users/stephenvickers/Downloads/reviews.csv"
+
+let csv = try CSV(path: path)
+
+print()
+
+print(csv.rows[0])
 

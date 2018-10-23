@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/CSVParser.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/xcode.xml
+main.swift
+CSVParser.xcodeproj/project.xcworkspace/xcuserdata/stephenvickers.xcuserdatad/xcschemes/
+CSVParser.xcodeproj/xcuserdata/stephenvickers.xcuserdatad/xcschemes/CSVParser.xcscheme
