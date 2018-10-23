@@ -13,7 +13,8 @@ let path = "/Users/stephenvickers/Downloads/reviews.csv"
 
 let csv = try CSV(path: path)
 
-print()
-
-print(csv.rows[0])
+csv.enumerateAsArray(block: { array in
+    print(array)
+    print()
+})
 

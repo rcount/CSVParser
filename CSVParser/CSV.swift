@@ -9,8 +9,8 @@ public class CSV {
 
     public var header: [String]!
 
-    var _rows: [[String: String]]? = nil
-    var _columns: [String: [String]]? = nil
+    internal var _rows: [[String: String]]? = nil
+    internal var _columns: [String: [String]]? = nil
 
     public var text: String
     public var delimiter: Delimiter
