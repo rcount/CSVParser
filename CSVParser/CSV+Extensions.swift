@@ -7,14 +7,67 @@ import Foundation
 
 
 extension String {
+
+    static var empty: String {
+        return ""
+    }
+
+    var char: Character{
+        return Character(self)
+    }
+
     var firstLine: String {
         var index = startIndex
-        let chars = self.characters
-        while index < endIndex && chars[index] != "\r\n" && chars[index] != "\n" && chars[index] != "\r" {
+        while index < self.endIndex && !String.isEndLine(self[index]) {
             index = self.index(before: index)
         }
-        return substring(to: index)
+        return self[..<index].string
     }
+
+    func split(separator: Delimiter) -> [String.SubSequence]{
+        return self.split(separator: separator.rawValue.char)
+    }
+
+    static func isEndLine(_ char: Character) -> Bool {
+        return char == "\r\n" ||
+                char == "\n" ||
+                char == "\r"
+    }
+}
+
+extension StringProtocol{
+    var string: String {
+        return String(self)
+    }
+
+    subscript(offset: Int) -> Element{
+        return self[self.index(self.startIndex, offsetBy: offset)]
+    }
+
+    subscript(_ range: CountableRange<Int>) -> SubSequence{
+        return prefix(range.lowerBound + range.count).suffix(range.count)
+    }
+
+    subscript(_ range: CountableClosedRange<Int>) -> SubSequence{
+        return prefix(range.lowerBound + range.count)
+                .suffix(range.count)
+    }
+
+    subscript(_ range: PartialRangeThrough<Int>) -> SubSequence {
+        return prefix(range.upperBound.advanced(by: 1))
+    }
+
+    subscript(_ range: PartialRangeUpTo<Int>) -> SubSequence {
+        return prefix(range.upperBound)
+    }
+
+    subscript(_ range: PartialRangeFrom<Int>) -> SubSequence {
+        return suffix(Swift.max(0, count - range.lowerBound))
+    }
+}
+
+extension Substring{
+    var string: String {return String(self)}
 }
 
 extension Character {
@@ -27,5 +80,9 @@ extension Character {
 extension Array where Element == String{
     func joined(separator sep: Character) -> Element{
         return self.joined(separator: sep.string)
+    }
+
+    func joined(separator sep: Delimiter) -> Element{
+        return self.joined(separator: sep.rawValue)
     }
 }

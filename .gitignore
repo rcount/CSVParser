@@ -5,5 +5,7 @@
 .idea/workspace.xml
 .idea/xcode.xml
 main.swift
+Product.swift
+Review.swift
 CSVParser.xcodeproj/project.xcworkspace/xcuserdata/stephenvickers.xcuserdatad/xcschemes/
 CSVParser.xcodeproj/xcuserdata/stephenvickers.xcuserdatad/xcschemes/CSVParser.xcscheme

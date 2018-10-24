@@ -10,10 +10,10 @@
 		23C8BF58217F958400677953 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8BF57217F958400677953 /* main.swift */; };
 		31AD60A4F519FE16F0C0C6CC /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD6F27EB6BBB314C8721DA /* CSV.swift */; };
 		31AD6240D811932A1EEA740D /* CSV+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD6CA3F8AC42D2233A4338 /* CSV+Extensions.swift */; };
+		31AD62FBF903B63391E544D3 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD65C59BA18E36E4901207 /* Review.swift */; };
 		31AD671B1FB17AEF99A9E397 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD65320926152FFDABC720 /* FileReader.swift */; };
-		31AD6784A3222406A7DC95E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD690029FEC6CDB1F58B51 /* Parser.swift */; };
+		31AD6E7CEDDDB967F348363B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD6D1BC80616824165B151 /* Product.swift */; };
 		31AD6F0FCB89FF419C687999 /* Delimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD6EF607E636E90C93020B /* Delimiter.swift */; };
-		31AD6F52643218B59EBEF11A /* ParserHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD65CF1FD2D4A456397BD6 /* ParserHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,9 +32,9 @@
 		23C8BF54217F958400677953 /* CSVParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CSVParser; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C8BF57217F958400677953 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		31AD65320926152FFDABC720 /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
-		31AD65CF1FD2D4A456397BD6 /* ParserHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelpers.swift; sourceTree = "<group>"; };
-		31AD690029FEC6CDB1F58B51 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		31AD65C59BA18E36E4901207 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		31AD6CA3F8AC42D2233A4338 /* CSV+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSV+Extensions.swift"; sourceTree = "<group>"; };
+		31AD6D1BC80616824165B151 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		31AD6EF607E636E90C93020B /* Delimiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delimiter.swift; sourceTree = "<group>"; };
 		31AD6F27EB6BBB314C8721DA /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,9 +73,9 @@
 				31AD6F27EB6BBB314C8721DA /* CSV.swift */,
 				31AD6CA3F8AC42D2233A4338 /* CSV+Extensions.swift */,
 				31AD6EF607E636E90C93020B /* Delimiter.swift */,
-				31AD690029FEC6CDB1F58B51 /* Parser.swift */,
-				31AD65CF1FD2D4A456397BD6 /* ParserHelpers.swift */,
 				31AD65320926152FFDABC720 /* FileReader.swift */,
+				31AD6D1BC80616824165B151 /* Product.swift */,
+				31AD65C59BA18E36E4901207 /* Review.swift */,
 			);
 			path = CSVParser;
 			sourceTree = "<group>";
@@ -141,9 +141,9 @@
 				31AD60A4F519FE16F0C0C6CC /* CSV.swift in Sources */,
 				31AD6240D811932A1EEA740D /* CSV+Extensions.swift in Sources */,
 				31AD6F0FCB89FF419C687999 /* Delimiter.swift in Sources */,
-				31AD6784A3222406A7DC95E8 /* Parser.swift in Sources */,
-				31AD6F52643218B59EBEF11A /* ParserHelpers.swift in Sources */,
 				31AD671B1FB17AEF99A9E397 /* FileReader.swift in Sources */,
+				31AD6E7CEDDDB967F348363B /* Product.swift in Sources */,
+				31AD62FBF903B63391E544D3 /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,23 +5,30 @@
 
 import Foundation
 
+/*:
+    Public Enum to for a Delimiter for a CSV file
+*/
 public enum Delimiter{
     case comma
     case tab
-    case newLine
+    case colon
+    case semicolon
     case pipe
 
 }
 
+//MARK: - Extension to make Delimiter conform to RawRepresentable
 extension Delimiter: RawRepresentable{
-    public init?(rawValue: Character) {
+    public init?(rawValue: String) {
         switch rawValue{
             case ",":
                 self = .comma
             case "\t":
                 self = .tab
-            case "\n":
-                self = .newLine
+            case ":":
+                self = .colon
+            case ";":
+                self = .semicolon
             case "|":
                 self = .pipe
             default:
@@ -29,21 +36,30 @@ extension Delimiter: RawRepresentable{
         }
     }
 
-    public var rawValue: Character {
+    public var rawValue: String {
         switch self{
             case .comma:
                 return ","
             case .tab:
                 return "\t"
-            case .newLine:
-                return "\n"
+            case .colon:
+                return ":"
+            case .semicolon:
+                return ";"
             case .pipe:
                 return "|"
         }
     }
 }
 
+//MARK: - Extension to make Delimiter conform to CustomStringConvertible
+extension Delimiter: CustomStringConvertible{
+    public var description: String {
+        return self.rawValue
+    }
+}
 
+//MARK: - Extension to make Delimiter conform to Equatable
 extension Delimiter: Equatable{
 
     public static func ==(lhs: Delimiter, rhs: Delimiter) -> Bool {
