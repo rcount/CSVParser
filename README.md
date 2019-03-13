@@ -9,7 +9,7 @@ Module to parse either a comma, tab, newLine, or pipe ("|") separated file.
 let csv = CSV(text: "id,name,age\n1,Alice,18")
 
 //With a custom Delimiter
-let tsv = CSV(text" "id\tname\tage\n1\tAlice\t18", delimiter = .tab)```
+let tsv = CSV(text: "id\tname\tage\n1\tAlice\t18", delimiter = .tab)```
 
 //From a file with errors
 do{
